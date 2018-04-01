@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lemon.relativelayout.MainActivity">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@color/RED"
+        android:text="@string/RED"
+        android:id="@+id/button2" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:background="@color/ORANGE"
+        android:text="@string/ORANGE"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:background="@color/YELLOW"
+        android:text="@string/YELLOW"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:background="@color/BLUE"
+        android:text="@string/BLUE"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="@color/GREEN"
+        android:text="@string/GREEN"
+        android:id="@+id/button3" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="@color/INDIG"
+        android:text="@string/INDIGO" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/VIOLET"
+        android:text="@string/VIOLET"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
